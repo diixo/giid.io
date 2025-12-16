@@ -1,15 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="nlwhE58XAS" viewBox="0 0 389.89473684210526 100.57586692469512" height="100.57586692469512" width="389.89473684210526" style="width: 389.895px; height: 100.576px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.50629); z-index: 0; cursor: pointer; overflow: visible;">
+<svg xmlns="http://www.w3.org/2000/svg" id="nlwhE58XAS" viewBox="0 0 389.89473684210526 100.57586692469512" height="100.57586692469512" width="389.89473684210526" 
+style="width: 389.895px; height: 100.576px; position: absolute; top: 0; left: 0; transform: translate(0, 0); z-index: 0; cursor: pointer; overflow: visible;">
 
 <defs id="SvgjsDefs1986">
 <linearGradient id="SvgjsLinearGradient1991">
-<stop id="SvgjsStop1992" stop-color="#905e26" offset="0">
+<stop id="SvgjsStop1992" stop-color="#1CA2FF" offset="0"><!--28, 162, 255-->
 
 </stop>
 
-<stop id="SvgjsStop1993" stop-color="#f5ec9b" offset="0.5">
+<stop id="SvgjsStop1993" stop-color="#0e8CF2" offset="0.5">
 </stop>
 
-<stop id="SvgjsStop1994" stop-color="#905e26" offset="1">
+<stop id="SvgjsStop1994" stop-color="#0068DC" offset="1"><!--0, 104, 220-->
 </stop>
 </linearGradient>
 </defs>
