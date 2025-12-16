@@ -1571,8 +1571,8 @@ footer {
   line-height: 21px;
   color: #FFFFFF;
   text-align: center;
-  margin-bottom: 30px;
-  margin-top: 40px;
+  margin-bottom: 2.0rem;
+  margin-top: 2.0rem;
 }
 
 @media screen and (max-width: 768px) {
