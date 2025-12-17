@@ -22,6 +22,9 @@
 @media (max-width: 991px) {
   .navigation {
     padding: 15px 0px;
+    /*
+    padding: 12px 0px;
+    */
   }
 }
 
