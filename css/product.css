@@ -1,3 +1,23 @@
+:root {
+  --cadetblue: #5F9EA0;
+
+
+  --my-primary: #569EB8;
+  --my-1-hover: #468AA3;
+
+  /* chat-gpt style primary button colors */
+  --my-primary-hover:  #4A8FA6;
+  --my-primary-active: #3F7F93;
+  --my-primary-text:   #FFFFFF;
+
+
+  --bs-sky-v1: #2FA4A9;
+  --bs-sky-hover-v1: #238C90;
+
+  --bs-sky-v2: #0086B8;
+  --bs-sky-hover-v2: #0076A8;
+}
+
 .container {
   max-width: 960px;
 }
