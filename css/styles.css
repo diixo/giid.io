@@ -3703,3 +3703,7 @@ footer {
     display: none;
   }
 }
+
+li.shadow {
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.85) !important;
+}
