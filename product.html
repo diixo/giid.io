@@ -69,7 +69,7 @@
       .btn-bd-primary {
         --bd-violet-bg: #712cf9;
         --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-        --bs-btn-font-weight: 600;
+        --bs-btn-font-weight: 500;
         --bs-btn-color: var(--bs-white);
         --bs-btn-bg: var(--bd-violet-bg);
         --bs-btn-border-color: var(--bd-violet-bg);
@@ -119,76 +119,7 @@
         ></path>
       </symbol>
     </svg>
-    <div
-      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
-    >
-      <button
-        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-        id="bd-theme"
-        type="button"
-        aria-expanded="false"
-        data-bs-toggle="dropdown"
-        aria-label="Toggle theme (auto)"
-      >
-        <svg class="bi my-1 theme-icon-active" aria-hidden="true">
-          <use href="#circle-half"></use>
-        </svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul
-        class="dropdown-menu dropdown-menu-end shadow"
-        aria-labelledby="bd-theme-text"
-      >
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="light"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#sun-fill"></use>
-            </svg>
-            Light
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="dark"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#moon-stars-fill"></use>
-            </svg>
-            Dark
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center active"
-            data-bs-theme-value="auto"
-            aria-pressed="true"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#circle-half"></use>
-            </svg>
-            Auto
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </div>
+
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol
         id="aperture"
@@ -216,10 +147,7 @@
         ></path>
       </symbol>
     </svg>
-    <nav
-      class="navbar navbar-expand-md bg-dark sticky-top border-bottom"
-      data-bs-theme="dark"
-    >
+    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
       <div class="container">
         <a class="navbar-brand d-md-none" href="#">
           <svg class="bi" width="24" height="24" aria-hidden="true">
@@ -227,30 +155,15 @@
           </svg>
           Aperture
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvas"
-          aria-controls="offcanvas"
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvas"
-          aria-labelledby="offcanvasLabel"
-        >
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body justify-content-inbetween">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -274,14 +187,11 @@
               </ul>
             </div>
           </div>
-
         </div>
       </div>
     </nav>
     <main>
-      <div
-        class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"
-      >
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
         <div class="col-md-6 p-lg-5 mx-auto my-5">
           <h1 class="display-3 fw-bold">Designed for engineers</h1>
           <h3 class="fw-normal text-muted mb-3">
@@ -294,23 +204,16 @@
                 <use xlink:href="#chevron-right"></use>
               </svg>
             </a>
-            <a class="icon-link" href="#">
-              Buy
-              <svg class="bi" aria-hidden="true">
-                <use xlink:href="#chevron-right"></use>
-              </svg>
-            </a>
+            <button type="button" class="btn btn-bd-primary px-3">
+              Learn more...
+            </button>
           </div>
         </div>
         <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div
-          class="product-device product-device-2 shadow-sm d-none d-md-block"
-        ></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
       </div>
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div
-          class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-        >
+        <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 py-3">
             <h2 class="display-5">Another headline</h2>
             <p class="lead">And an even wittier subheading.</p>
@@ -320,9 +223,7 @@
             style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
           ></div>
         </div>
-        <div
-          class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-        >
+        <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 p-3">
             <h2 class="display-5">Another headline</h2>
             <p class="lead">And an even wittier subheading.</p>
@@ -334,9 +235,7 @@
         </div>
       </div>
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div
-          class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-        >
+        <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 p-3">
             <h2 class="display-5">Another headline</h2>
             <p class="lead">And an even wittier subheading.</p>
@@ -346,9 +245,7 @@
             style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
           ></div>
         </div>
-        <div
-          class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-        >
+        <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 py-3">
             <h2 class="display-5">Another headline</h2>
             <p class="lead">And an even wittier subheading.</p>
@@ -360,9 +257,7 @@
         </div>
       </div>
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div
-          class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-        >
+        <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 p-3">
             <h2 class="display-5">Another headline</h2>
             <p class="lead">And an even wittier subheading.</p>
@@ -372,9 +267,7 @@
             style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
           ></div>
         </div>
-        <div
-          class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-        >
+        <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 py-3">
             <h2 class="display-5">Another headline</h2>
             <p class="lead">And an even wittier subheading.</p>
@@ -386,9 +279,7 @@
         </div>
       </div>
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div
-          class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-        >
+        <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 p-3">
             <h2 class="display-5">Another headline</h2>
             <p class="lead">And an even wittier subheading.</p>
@@ -398,9 +289,7 @@
             style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
           ></div>
         </div>
-        <div
-          class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-        >
+        <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 py-3">
             <h2 class="display-5">Another headline</h2>
             <p class="lead">And an even wittier subheading.</p>
@@ -434,42 +323,28 @@
               d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
             ></path>
           </svg>
-          <small class="d-block mb-3 text-body-secondary"
-            >&copy; 2017–2025</small
-          >
+          <small class="d-block mb-3 text-body-secondary">&copy; 2017–2025</small>
         </div>
         <div class="col-6 col-md">
           <h5>Features</h5>
           <ul class="list-unstyled text-small">
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Cool stuff</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Cool stuff</a>
             </li>
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Random feature</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Random feature</a>
             </li>
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Team feature</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Team feature</a>
             </li>
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Stuff for developers</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Stuff for developers</a>
             </li>
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Another one</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Another one</a>
             </li>
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Last time</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Last time</a>
             </li>
           </ul>
         </div>
@@ -477,24 +352,16 @@
           <h5>Resources</h5>
           <ul class="list-unstyled text-small">
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Resource name</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Resource name</a>
             </li>
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Resource</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Resource</a>
             </li>
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Another resource</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Another resource</a>
             </li>
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Final resource</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Final resource</a>
             </li>
           </ul>
         </div>
@@ -502,19 +369,13 @@
           <h5>Resources</h5>
           <ul class="list-unstyled text-small">
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Business</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Business</a>
             </li>
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Education</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Education</a>
             </li>
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Government</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Government</a>
             </li>
             <li>
               <a class="link-secondary text-decoration-none" href="#">Gaming</a>
@@ -528,14 +389,10 @@
               <a class="link-secondary text-decoration-none" href="#">Team</a>
             </li>
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Locations</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Locations</a>
             </li>
             <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Privacy</a
-              >
+              <a class="link-secondary text-decoration-none" href="#">Privacy</a>
             </li>
             <li>
               <a class="link-secondary text-decoration-none" href="#">Terms</a>
