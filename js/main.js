@@ -31,26 +31,36 @@ $('#navigation1').fixed();
 /*---------------------
 Transparent Nav Options
 -----------------------*/
-if ($("#nav-transparent").length !== 0) {
-  if ($(window).width() > 991) {
-    $("#nav-transparent #main_logo").css("display", "none");
-  } else {
-    $("#nav-transparent #light_logo").css("display", "none");
-  }
-  $(window).scroll(function () {
-    const scroll = $(window).scrollTop();
-    if ($(window).width() > 991) {
-      if (scroll > 30) {
-        $(".navigation-fixed-wrapper").addClass("nav-white-bg");
-        $("#nav-transparent #main_logo").css("display", "inline-block");
-        $("#nav-transparent #light_logo").css("display", "none");
-      } else {
-        $(".navigation-fixed-wrapper").removeClass("nav-white-bg");
-        $("#nav-transparent #light_logo").css("display", "inline-block");
-        $("#nav-transparent #main_logo").css("display", "none");
-      }
+function updateTransparentNav() {
+  if (!$("#nav-transparent").length) return;
+
+  const isDesktop = $(window).width() > 991;
+  const scroll = $(window).scrollTop();
+
+  if (isDesktop) {
+    if (scroll > 30) {
+      $(".navigation-fixed-wrapper").addClass("nav-white-bg");
+      $("#nav-transparent #main_logo").show();
+      $("#nav-transparent #light_logo").hide();
+    } else {
+      $(".navigation-fixed-wrapper").removeClass("nav-white-bg");
+      $("#nav-transparent #light_logo").show();
+      $("#nav-transparent #main_logo").hide();
     }
-  })
+  } else {
+    // mobile — fixed state
+    $(".navigation-fixed-wrapper").removeClass("nav-white-bg");
+    $("#nav-transparent #main_logo").show();
+    $("#nav-transparent #light_logo").hide();
+  }
+}
+
+if ($("#nav-transparent").length !== 0) {
+  // initial state
+  updateTransparentNav();
+
+  $(window).on("scroll", updateTransparentNav);
+  $(window).on("resize", updateTransparentNav);
 }
 
 /*---------------------
