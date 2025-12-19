@@ -1531,6 +1531,7 @@ footer {
   margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
+  padding-left: 0;
 }
 
 .social-footer li {
