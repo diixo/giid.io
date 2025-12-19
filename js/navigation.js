@@ -50,6 +50,7 @@
 			
 			if(plugin.settings.offCanvasCloseButton){
 				$(element).find(".nav-menus-wrapper").prepend("<span class='nav-menus-wrapper-close-button'>&#10005;</span>");
+                console.log(".nav-menus-wrapper")
 			}
             
             if(plugin.settings.offCanvasSide == "right"){
@@ -64,6 +65,7 @@
             checkSubmenus();
             
             $(element).find(".nav-toggle").on("click touchstart", function(e){
+                console.log(".nav-toggle-push")
                 e.stopPropagation(); 
                 e.preventDefault();
                 plugin.showOffcanvas();
@@ -73,6 +75,7 @@
             });
             
             $(element).find(".nav-menus-wrapper-close-button").on("click touchstart", function(){
+                console.log(".nav-toggle-click")
                 plugin.hideOffcanvas();
                 if(options !== undefined){
                     plugin.callback("onHideOffCanvas");
