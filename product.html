@@ -94,8 +94,14 @@
       .navbar-nav .nav-item .nav-link {
         padding-inline: 1.25rem;
       }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+
     </style>
   </head>
+
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
@@ -155,7 +161,7 @@
         <a class="navbar-brand d-md-none d-inline-flex align-items-center" href="#">
           <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round"
             stroke-linejoin="round" stroke-width="2" role="img" viewBox="0 0 24 24">
-            <title>Product</title>
+            <title>Products</title>
             <circle cx="12" cy="12" r="10"></circle>
             <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
           </svg>
@@ -176,7 +182,7 @@
             <a class="py-2 mb-3 d-inline-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none" href="#" aria-label="Product">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round"
                 stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24">
-                <title>Product</title>
+                <title>Products</title>
                 <circle cx="12" cy="12" r="10"></circle>
                 <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
               </svg>
@@ -184,7 +190,7 @@
             <div>
               <ul class="navbar-nav flex-grow-1 justify-content-inbetween">
                 <li class="nav-item"><a class="nav-link link-body-emphasis" href="tour.html">Tour</a></li>
-                <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
                 <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
                 <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                 <li class="nav-item"><button class="btn btn-accent-green ms-3 px-4">Sign-in</button></li>
@@ -194,9 +200,12 @@
         </div>
       </div>
     </nav>
+
     <main>
+
       <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-        <div class="col-md-6 p-lg-5 mx-auto my-5">
+
+        <div class="hero-content col-md-6 p-lg-5 mx-auto my-5">
           <h1 class="display-3 fw-bold">Designed for engineers</h1>
           <h3 class="fw-normal text-muted mb-3">
             Build anything you want with Aperture
@@ -216,6 +225,7 @@
         <div class="product-device shadow-sm d-none d-md-block"></div>
         <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
       </div>
+
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color: var(--my-primary-dark)">
           <div class="my-3 py-3 text-white">

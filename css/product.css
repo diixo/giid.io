@@ -69,6 +69,7 @@
   background-color: #b0b6ba;
   border-radius: 21px;
   transform: rotate(30deg);
+  z-index: 0;
 }
 
 .product-device::before {
