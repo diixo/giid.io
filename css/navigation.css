@@ -619,10 +619,10 @@
   display: inline-block;
   text-decoration: none;
   float: left;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   color: #70798b;
-  background-color: #fff;
+  background-color: #f8f8f8;
   -webkit-transition: color 0.3s, background 0.3s;
   transition: color 0.3s, background 0.3s;
 }
