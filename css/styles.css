@@ -45,6 +45,13 @@ TABLE OF CONTENT
 /*-----------------------------------------
 1. Headings
 -------------------------------------------*/
+.s-title-sm {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #222;
+}
+
 .s-title {
   font-size: 36px;
   font-weight: 600;
